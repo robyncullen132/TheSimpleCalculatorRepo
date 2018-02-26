@@ -12,24 +12,25 @@ var equation = "";
 
 function shownumber(number) 
 {
-  var currentv = inputscreen.value; //gets the current value
-  inputscreen.value = currentv + number; 
+  inputscreen.value += number; 
   //concatenate our number,then assign it to the input screen 
   //attribute value to display it.
 }
 
 function operatorinput(operator) 
 {
-  equation += inputscreen.value + operator; //concatenate the 
+  inputscreen.value += operator;
+  //concatenate the 
   //number and operator to the equation.
 }
 
-
 function calculatesum(calculate) 
 {
-  equation += inputscreen.value + currentv;
-  eval(equation);
-  inputscreen.value = equation;
+  var a = eval(inputscreen.value) 
+  inputscreen.value = a;
+}
+{
+
 }
 
 function clearscreen(clear) 
