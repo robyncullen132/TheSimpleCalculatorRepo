@@ -5,44 +5,47 @@
     <meta name="viewport" content="width=device-width, ivalue=""tial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calculator Challenge</title> 
-    <link src="TheSimpleCalculator.css"></link>
+    <link rel="stylesheet" type="text/css" href="TheSimpleCalculator.css"></link>
 </head>
-<body bgcolor="#605B56">
+<body bgcolor="#FFF1D0">
     <center><h1>The Fabulous Calculator</h1></center> 
     <center><h2><i>Simply a Simplistic Simple Calculator</i></h2></center>
-    
+<hr>
+</body>
+
     <!-- Manipulating the input Screen -->
     <!-- <input id="screeninput" type="text" value=" " readonly></input> -->
 
     <table bgcolor="#ACFCD9" id="thecalculator" border="5" color="black" width="600" height="600" align="center">
         <tr>
-            <td> <button name="clear" value="" onclick="clearscreen('clear')"> Clear </button> </td>
-            <td colspan="3"> <input id="inputscreen" type="text" value="" name="inputscreen" readonly></input></td>
+            <td bgcolor="#FC6471"> <center><button class="button" name="clear" value="" onclick="clearscreen('clear')"> C </button></center></td>
+            <td colspan="3" bgcolor="#000000"> <center><input width="50%" bgcolor="#000000" id="inputscreen" type="text" value="" name="inputscreen" readonly></input></center></td>
             
         </tr>
         <tr>
-            <td> <center><button id="number" name="seven" value="7" onclick="shownumber('7')">7</button></center> </td>
-            <td> <button  name="eight" value="8" onclick="shownumber('8')" >8</button> </td>
-            <td> <button  name="nine" value="9" onclick="shownumber('9')" >9</button> </td>
-            <td> <button  name="plus" value="+" onclick="operatorinput('+')" >+</button> </td>
+            <td> <center><button id="number" class="button" name="seven" value="7" onclick="shownumber('7')">7</button></center> </td>
+            <td> <center><button  name="eight" class="button" value="8" onclick="shownumber('8')" >8</button></center> </td>
+            <td> <center><button  name="nine" class="button" value="9" onclick="shownumber('9')" >9</button></center> </td>
+            <td bgcolor="#726E97"> <center><button  class="button" name="plus" value="+" onclick="operatorinput('+')" >+</button></center> </td>
+            
         </tr>
         <tr>
-            <td> <button  name="four" value="4" onclick="shownumber('4')" >4</button> </td>
-            <td> <button  name="five" value="5" onclick="shownumber('5')" >5</button> </td>
-            <td> <button  name="six" value="6" onclick="shownumber('6')" >6</button> </td>
-            <td> <button  id="/" name="divide" value="/" onclick="operatorinput('/')" >÷</button> </td>
+            <td> <center><button  class="button" name="four" value="4" onclick="shownumber('4')" >4</button></center> </td>
+            <td> <center><button  class="button" name="five" value="5" onclick="shownumber('5')" >5</button></center> </td>
+            <td> <center><button  class="button" name="six" value="6" onclick="shownumber('6')" >6</button></center> </td>
+            <td bgcolor="#726E97"> <center><button  class="button" id="/" name="divide" value="/" onclick="operatorinput('/')" >÷</button></center> </td>
         </tr>
          <tr>
-            <td> <button  name="one" value="1" onclick="shownumber('1')" >1</button> </td>
-            <td> <button  name="two" value="2" onclick="shownumber('2')" >2</button>  </td>
-            <td> <button  name="three" value="3" onclick="shownumber('3')" >3</button> </td>
-            <td> <button  name="multiply" value="*" onclick="operatorinput('x')" >x</button> </td>
+            <td> <center><button  class="button" name="one" value="1" onclick="shownumber('1')" >1</button></center> </td>
+            <td> <center><button class="button"  name="two" value="2" onclick="shownumber('2')" >2</button></center> </td>
+            <td> <center><button  class="button" name="three" value="3" onclick="shownumber('3')" >3</button></center> </td>
+            <td bgcolor="#726E97"> <center><button  class="button" name="multiply" value="*" onclick="operatorinput('x')" >x</button></center> </td>
         </tr>
         <tr>
-            <td> <button  name="zero" value="0" onclick="shownumber('0')" >0</button> </td>
-            <td> <button  name="point" value="." onclick="shownumber('.')" >.</button> </td>
-            <td> <button  name="equals" value="=" onclick="calculatesum('=')" >=</button> </td>
-            <td> <button  name="minus" value="-" onclick="operatorinput('-')" >-</button> </td>
+            <td> <center><button class="button"  name="zero" value="0" onclick="shownumber('0')" >0</button></center> </td>
+            <td> <center><button class="button"  name="point" value="." onclick="shownumber('.')" >.</button></center> </td>
+            <td bgcolor="#E8FFB7"> <center><button class="button"  name="equals" value="=" onclick="calculatesum('=')" >=</button> </center></td>
+            <td bgcolor="#726E97"> <center><button class="button"  name="minus" value="-" onclick="operatorinput('-')" >-</button></center> </td>
         </tr>
             
     </table>
