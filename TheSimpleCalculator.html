@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, ivalue=""tial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator Challenge</title>
+</head>
+<body>
+    <center><h1>The Fabulous Calculator</h1></center> 
+    <center><h2><i>Simply a Simplistic Simple Calculator</i></h2></center>
+    
+    <!-- Manipulating the input Screen -->
+    <!-- <input id="screeninput" type="text" value=" " readonly></input> -->
+
+    <table id="thecalculator" border="5" color="black" width="600" height="600" align="center">
+        <tr>
+            <td> <button name="clear" value="" onclick="clearscreen('clear')"> Clear </button> </td>
+            <td colspan="3"> <input id="inputscreen" type="text" value="" name="inputscreen" readonly></input></td>
+            
+        </tr>
+        <tr>
+            <td> <button  id="number" name="seven" value="7" onclick="shownumber('7')">7</button> </td>
+            <td> <button  name="eight" value="8" onclick="shownumber('8')" >8</button> </td>
+            <td> <button  name="nine" value="9" onclick="shownumber('9')" >9</button> </td>
+            <td> <button  name="plus" value="+" onclick="operatorinput('+')" >+</button> </td>
+        </tr>
+        <tr>
+            <td> <button  name="four" value="4" onclick="shownumber('4')" >4</button> </td>
+            <td> <button  name="five" value="5" onclick="shownumber('5')" >5</button> </td>
+            <td> <button  name="six" value="6" onclick="shownumber('6')" >6</button> </td>
+            <td> <button  name="divide" value="/" onclick="operatorinput('÷')" >÷</button> </td>
+        </tr>
+         <tr>
+            <td> <button  name="one" value="1" onclick="shownumber('1')" >1</button> </td>
+            <td> <button  name="two" value="2" onclick="shownumber('2')" >2</button>  </td>
+            <td> <button  name="three" value="3" onclick="shownumber('3')" >3</button> </td>
+            <td> <button  name="multiply" value="*" onclick="operatorinput('x')" >x</button> </td>
+        </tr>
+        <tr>
+            <td> <button  name="zero" value="0" onclick="shownumber('0')" >0</button> </td>
+            <td> <button  name="point" value="." onclick="shownumber('.')" >.</button> </td>
+            <td> <button  name="equals" value="=" onclick="calculatesum('=')" >=</button> </td>
+            <td> <button  name="minus" value="-" onclick="operatorinput('-')" >-</button> </td>
+        </tr>
+            
+    </table>
+
+</body>
+<script src="TheSimplecalculator.js"></script>
+</html>
